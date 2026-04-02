@@ -1,0 +1,88 @@
+/run/initialize
+#
+/gps/particle proton
+#
+/gps/source/add 0.228331
+/gps/particle proton
+/gps/pos/type Point
+/gps/pos/centre -5.5 0.0 -14.0 cm 
+/gps/direction 0 0 1
+/gps/ene/mono 200 MeV
+
+/gps/source/add 0.243674
+/gps/particle proton
+/gps/pos/type Point
+/gps/pos/centre -4.5 0.0 -14.0 cm 
+/gps/direction 0 0 1
+/gps/ene/mono 200 MeV 
+
+/gps/source/add 0.262051
+/gps/particle proton
+/gps/pos/type Point
+/gps/pos/centre -3.5 0.0 -14.0 cm 
+/gps/direction 0 0 1
+/gps/ene/mono 200 MeV 
+
+/gps/source/add 0.284566
+/gps/particle proton
+/gps/pos/type Point
+/gps/pos/centre -2.5 0.0 -14.0 cm 
+/gps/direction 0 0 1
+/gps/ene/mono 200 MeV 
+
+/gps/source/add 0.312974
+/gps/particle proton
+/gps/pos/type Point
+/gps/pos/centre -1.5 0.0 -14.0 cm 
+/gps/direction 0 0 1
+/gps/ene/mono 200 MeV 
+
+/gps/source/add 0.350256
+/gps/particle proton
+/gps/pos/type Point
+/gps/pos/centre -0.5 0.0 -14.0 cm 
+/gps/direction 0 0 1
+/gps/ene/mono 200 MeV 
+
+/gps/source/add 0.401982
+/gps/particle proton
+/gps/pos/type Point
+/gps/pos/centre 0.5 0.0 -14.0 cm 
+/gps/direction 0 0 1
+/gps/ene/mono 200 MeV 
+
+/gps/source/add 0.480097
+/gps/particle proton
+/gps/pos/type Point
+/gps/pos/centre 1.5 0.0 -14.0 cm 
+/gps/direction 0 0 1
+/gps/ene/mono 200 MeV 
+
+/gps/source/add 0.616633
+/gps/particle proton
+/gps/pos/type Point
+/gps/pos/centre 2.5 0.0 -14.0 cm 
+/gps/direction 0 0 1
+/gps/ene/mono 200 MeV 
+
+/gps/source/add 0.945906
+/gps/particle proton
+/gps/pos/type Point
+/gps/pos/centre 3.5 0.0 -14.0 cm 
+/gps/direction 0 0 1
+/gps/ene/mono 200 MeV 
+
+/gps/source/add 1.8767
+/gps/particle proton
+/gps/pos/type Point
+/gps/pos/centre 4.5 0.0 -14.0 cm 
+/gps/direction 0 0 1
+/gps/ene/mono 200 MeV 
+
+
+/run/printProgress 50000
+#
+/run/beamOn 100000
+#
+# /control/execute ./200mod.mac
+# /vis/viewer/set/viewpointThetaPhi 90 90

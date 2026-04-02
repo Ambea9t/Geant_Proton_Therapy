@@ -9,18 +9,18 @@
 RunAction::RunAction()
 {
 	G4int nbins = 1000;
-  	G4double vmin = -10.;
-  	G4double vmax = 10.;
+        G4double vmin = 0.;
+  	G4double vmax = 20.;
 	G4RunManager::GetRunManager()->SetPrintProgress(1);
 	auto analysisManager = G4AnalysisManager::Instance();
 	analysisManager->SetVerboseLevel(1);
 	analysisManager->SetNtupleMerging(true);
 	
-	analysisManager->CreateH1("Z","Edep-Z disribution", nbins, vmin *cm, vmax *cm);
+	analysisManager->CreateH1("H1E","Edep disribution", nbins, vmin *cm, vmax *cm);
 
 	analysisManager->CreateNtuple("Test", "Hits");
-    	analysisManager->CreateNtupleDColumn("Z");
-    	analysisManager->CreateNtupleDColumn("E");
+    	analysisManager->CreateNtupleDColumn("Z-d");
+    	analysisManager->CreateNtupleDColumn("E-d");
     	analysisManager->FinishNtuple();
 }
 
